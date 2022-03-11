@@ -1,0 +1,19 @@
+{ // 说明脚本要运行的环境
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "commonjs": true // 是否允许模块化
+  },
+  "root": true, //根配置，每一个文件夹都可以配置eslintrc文件
+  "extends": "eslint:recommended",
+  "parser": "@typescript-eslint/parser", // 解析器
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "plugins": [
+    "react"
+  ]
+}

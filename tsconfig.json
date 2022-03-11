@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "downlevelIteration": true,
+    "baseUrl": ".",
+    "importHelpers": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@/*": ["src/*"],
+      "components/*": ["src/components/*"],
+      "provider/*": ["src/provider/*"],
+      "utils/*": ["src/utils/*"],
+      "assets/*": ["src/assets/*"]
+    }
+  },
+  "exclude": ["public", "dist", "src/components/iconPicker/*"]
+}
